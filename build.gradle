@@ -1,0 +1,48 @@
+group 'jp.co.plusvision.example'
+version '0.0.1'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+sourceCompatibility = JavaVersion.VERSION_17
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            groupId = 'jp.co.plusvision.example'
+            artifactId = 'calculator'
+            version = '0.0.1'
+
+            pom {
+                name = 'calculator'
+                description = 'A library for calculations.'
+                url = 'https://github.com/bluerabbit/calculator'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            url = "file://${rootDir}/docs"
+        }
+    }
+}

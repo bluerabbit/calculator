@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "jp.co.plusvision.example",
+    "module": "calculator",
+    "version": "0.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "calculator-0.0.1.jar",
+          "url": "calculator-0.0.1.jar",
+          "size": 1105,
+          "sha512": "aca2c66c890439f43282c014a7525fb5da0d341b959a6c8ffa2e93a13fc31717a98a340b3b920a9422234016a72b4ccd6ecc2fbc123a87a00a6daa64b9c36356",
+          "sha256": "4e324ab47bdec37c4b415927bfad6e821351f45a68d823c23f878689ceb6490d",
+          "sha1": "afbe55f73c60b17b4f9e4a8face278b98ef902c8",
+          "md5": "f8e1a0f5611a50bcadf49c43a11f0272"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "calculator-0.0.1.jar",
+          "url": "calculator-0.0.1.jar",
+          "size": 1105,
+          "sha512": "aca2c66c890439f43282c014a7525fb5da0d341b959a6c8ffa2e93a13fc31717a98a340b3b920a9422234016a72b4ccd6ecc2fbc123a87a00a6daa64b9c36356",
+          "sha256": "4e324ab47bdec37c4b415927bfad6e821351f45a68d823c23f878689ceb6490d",
+          "sha1": "afbe55f73c60b17b4f9e4a8face278b98ef902c8",
+          "md5": "f8e1a0f5611a50bcadf49c43a11f0272"
+        }
+      ]
+    }
+  ]
+}
